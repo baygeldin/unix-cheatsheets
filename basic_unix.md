@@ -178,4 +178,4 @@
 `tar xvf <file>.tar` — extract an archive to a folder  
 `tar tf <file>.tar` — view a content of an archive  
 `tar xzvf <file>.tgz` = `gunzip -c <file>.tar.gz | tar xv` — extract a tgz archive  
-`tar xIvf <file>.tar.bz2` — extract a tar.bz2 archive*
+`tar xIvf <file>.tar.bz2` — extract a tar.bz2 archive
