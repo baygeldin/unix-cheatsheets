@@ -2,7 +2,7 @@
 
 ## Bash Shortcuts
 
-`Ctrl + C` — cancel current terminal process   
+`Ctrl + C` — cancel current terminal process  
 `Ctrl + L` — clear the terminal  
 `Shift + Page Up/Down` — pages of terminal (after a clearing)
 
@@ -13,12 +13,12 @@
 `Esc + f` — one word forward
 
 `Esc + c` — capitalize word  
-`Esc + u` — upper-case word 
+`Esc + u` — upper-case word  
 `Esc + l` — lower-case word
 
 `Ctrl + U` — delete to the left  
 `Ctrl + K` — delete to the right  
-`Ctrl + W` — delete a word on the left
+`Ctrl + W` — delete a word on the left  
 `Ctrl + Y` — revert deleting
 
 `Ctrl + R` — search the history  
