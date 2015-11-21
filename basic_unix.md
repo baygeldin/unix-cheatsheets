@@ -30,7 +30,7 @@
 
 ## Streams
 
-`<command>` — execute a command and paste it inline (e.g. "echo \`pwd\`/test")  
+`` `<command>` `` — execute a command and paste it inline (e.g. "echo \`pwd\`/test")  
 `>` — redirect a stream to a file or another stream (1\> for stdin, 2\> for stderr)  
 `>>` — redirect a stream to the end of a file (e.g. "sort << END" helps to pipe stdin to sort)  
 `|` — pipes result of a command to the next command
