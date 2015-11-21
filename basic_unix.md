@@ -91,8 +91,8 @@
 `diff -rc <file/folder> <file/folder>` — diffrences with context (recursive)
 
 `patch -i <file>.diff <file>` — apply diff to a file (need full path to .diff file)  
-`patch <file> < <file>.diff` — same as above, but don't need full path  
-`patch -d <folder> < <file>.diff` — apply diff to a whole folder  
+`patch <file> <file>.diff` — same as above, but don't need full path  
+`patch -d <folder> <file>.diff` — apply diff to a whole folder  
 `patch -p<number> ..` — cusomize diff to it's location (typically you need -p1)
 
 
