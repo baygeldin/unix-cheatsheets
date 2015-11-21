@@ -1,2 +1,2 @@
-# unix-cheatsheets
-My cheatsheets for unix and friends.
+# Unix Cheatsheets
+Here I store some of my cheatsheets that can be useful when doing things with unix (e.g. cheatsheet for bash, vim, etc.). I'm trying to keep it precise and essential, so that information will remain minimal, but sufficient. I update cheatsheets anytime I find something that seems useful to me. That's it! (─‿─)
