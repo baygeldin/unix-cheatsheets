@@ -24,9 +24,11 @@
 `Ctrl + R` — search the history  
 `Tab` — autocomplete
 
+
 ## Bash Useful Things
 
 `!!` — last command (e.g. "sudo !!")
+
 
 ## Streams
 
@@ -39,6 +41,7 @@
 `xargs -0 ..` — set 0 as delimiter (e.g. "find . -name "\*.sh" -print0 | xargs -0 rm -rf")  
 `xargs -n <number> ..` — splits arguments by n and execute a command  
 `xargs sh -c '<command>; <command>;' ..` — xargs with multiple commands
+
 
 ## File System
 
@@ -75,7 +78,7 @@
 `head -n <number> <file>` — just head of a single file  
 `tail -n <number> <file>` — just tail of a single file
 
-`less <file>` — cat on steroids (commands: <number>G, g, q, arrows, page up/down)
+`less <file>` — cat on steroids (commands: \<number\>G, g, q, arrows, page up/down)
 
 `sort <file>` — sort lines of file alphabetically  
 `sort -o <file> <file>` — put results to a file  
