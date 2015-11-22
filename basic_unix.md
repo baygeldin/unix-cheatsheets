@@ -25,9 +25,25 @@
 `Tab` — autocomplete
 
 
-## Bash Useful Things
+## Bash Basics
 
-`!!` — last command (e.g. "sudo !!")
+`!!` — last command (e.g. "sudo !!")  
+`'` or `"` — multiline input (single quote)  
+`echo <text>` — print text at a new line  
+`echo -e <text>` — enable interpretation of backslashes (e.g. "echo -e 'foo\nbar'")
+
+
+## Scripting
+
+`.. $<variable>` — inline variable (e.g. environment variables)  
+`.. "$<variable>"` — same, but less error-prone  
+`read <variable>` — read variable
+
+`$<number>` — positional parameter/argument (e.g. $0 is the name of thr script)  
+`$#` — number of positional parameters
+`$$` — PID of the current shell  
+
+*to be continued...*
 
 
 ## Streams
@@ -35,12 +51,13 @@
 `` `<command>` `` — execute a command and paste it inline (e.g. "echo \`pwd\`/test")  
 `>` — redirect a stream to a file or another stream (1\> for stdin, 2\> for stderr)  
 `>>` — redirect a stream to the end of a file (e.g. "sort << END" helps to pipe stdin to sort)  
-`|` — pipes result of a command to the next command
+`|` — pipe the result of a command to the next command
 
 `xargs <command> <arguments>` — execute a command with given arguments  
 `xargs -0 ..` — set 0 as delimiter (e.g. "find . -name "\*.sh" -print0 | xargs -0 rm -rf")  
-`xargs -n <number> ..` — splits arguments by n and execute a command  
-`xargs sh -c '<command>; <command>;' ..` — xargs with multiple commands
+`xargs -n <number> ..` — split arguments by n and execute a command  
+`xargs sh -c '<command>; <command>;' ..` — xargs with multiple commands  
+`<command> | xargs <command>` — copy stdout of the first command to the arguments of the next command
 
 
 ## File System
@@ -81,7 +98,7 @@
 `less <file>` — cat on steroids (commands: \<number\>G, g, q, arrows, page up/down)
 
 `sort <file>` — sort lines of file alphabetically  
-`sort -o <file> <file>` — put results to a file  
+`sort -o <file> <file>` — put the results to a file  
 `sort -r <file>` — sort in reverse  
 `sort -R <file>` — sort randomly  
 `sort -n <file>` — sort numbers
@@ -182,3 +199,8 @@
 `tar tf <file>.tar` — view a content of an archive  
 `tar xzvf <file>.tgz` = `gunzip -c <file>.tar.gz | tar xv` — extract a tgz archive  
 `tar xIvf <file>.tar.bz2` — extract a tar.bz2 archive
+
+
+## Network
+
+*to be continued...*
