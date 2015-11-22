@@ -38,7 +38,7 @@
 `s/<regex>/<string>/<number>g` — substitute all matches begining with a match with a given number in a line  
 `s/<regex>/<string>/I` — ignore case
 
-### other commands
+#### other commands
 `a\<text>` — append a line (e.g. "sed '10 a\hi' .." to append a line after 10th line)  
 `i\<text>` — same as above, but inserts a line before matched lines  
 `c\<text>` — substitute a matched line with a given text  
