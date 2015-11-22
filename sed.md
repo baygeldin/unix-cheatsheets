@@ -2,8 +2,10 @@
 
 ## Sed Basics
 
-`sed -e '<script>' <file>` — apply script to a file and print the results  
-`sed -e 'script' -e 'script' ..` — even more scripts to apply  
+`.. | sed '<script>'` — apply a script to the stdout  
+`.. | sed -e '<script>'` — same as above  
+`sed -e '<script>' -e '<script>' ..` — even more scripts to apply  
+`sed '<script>' <file>` — apply a script to a file and print the results  
 `sed '<multiple lines with scripts>'` — same as above  
 `sed -f <script file> <file>` — same, but with a script file  
 `sed -n ..` — suppress strings not affected by a script
@@ -16,6 +18,7 @@
 > Commands usually have their own arguments and also they can be grouped.
 
 ### Patterns
+
 `<number>` — line with a given number will match the pattern  
 `$` — last line will match the pattern  
 `/<regex>/` — any regex you can imagine  
