@@ -16,7 +16,7 @@
 > Commands usually have their own arguments and also they can be grouped.
 
 ### Patterns
-`<number>` — line with a given number will match the pattern
+`<number>` — line with a given number will match the pattern  
 `$` — last line will match the pattern  
 `/<regex>/` — any regex you can imagine  
 `<pattern>,<pattern>` — lines that lies within this range will match the pattern
