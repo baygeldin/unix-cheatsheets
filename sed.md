@@ -2,9 +2,9 @@
 
 ## Sed Basics
 
-`sed -e "<script>" <file>` — apply script to a file and print the results  
-`sed -e "script" -e "script .."` — even more scripts to apply  
-`sed "<multiple lines with scripts>"` — same as above  
+`sed -e '<script>' <file>` — apply script to a file and print the results  
+`sed -e 'script' -e 'script' ..` — even more scripts to apply  
+`sed '<multiple lines with scripts>'` — same as above  
 `sed -f <script file> <file>` — same, but with a script file  
 `sed -n ..` — suppress strings not affected by a script
 
@@ -47,7 +47,7 @@
 `q` — quit sed (e.g. "sed '10 q' .." to quit after 10th line)  
 `!` — invert match (e.g. "sed '$ d' .." to delete all lines except of the last one)
 
-### grouping
+#### grouping
 ```sed
 <pattern> {
 	<command> # each command should start
@@ -58,7 +58,7 @@
 > In case of multiple sed scripts (e.g. with -e option), 
 > first script is applied to the input and it's results are passed to the next script line by line (this is necessary to understand!). For example, `echo '#foo' | sed -e '/#/ y/#/@/' -e '/@/ p'` will print "@foo", `echo -e 'foo\nbar' | sed -n -e 'p' -e 'p'` will print "foo\nfoo\nbar\nbar".
 
-### multiple lines
+#### multiple lines
 `n` — print current line (unless the "-n" is used) and read the next line  
 ```bash
 echo '
@@ -84,7 +84,7 @@ echo '
 }'
 ```
 
-### hold buffer
+#### hold buffer
 > There are two special locations in sed: pattern space and hold space.  
 > Pattern space is just a currently processed line, we're already familiar with that.  
 > Hold space (buffer) is more tricky and used to remember the data for later.
@@ -108,7 +108,7 @@ echo -e '#xyz\n#foo\nbar' | sed -n '
 '
 ```
 
-### labels
+#### labels
 `:<label>` — create a label (remember goto?)  
 `b <label>` — branch to a label (if label is empty go to the end of the script)
 ```bash

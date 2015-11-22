@@ -126,7 +126,8 @@
 
 `grep <text> <file>` — list of lines with given text in a single file  
 `grep -r <text> <folder>` — list of lines with given text in all folder (with filenames)  
-`grep -E <regex> <file>` — same, but with regex (e.g. "grep -r -E ^Alex .")
+`grep -E <regex> <file>` — same, but with regex (e.g. "grep -r -E ^Alex .")  
+`grep -i ..` — ignore case
 
 
 ## Time & Sheduling
