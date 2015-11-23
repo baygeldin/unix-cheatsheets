@@ -1,4 +1,18 @@
-# Basic Unix Cheatsheet
+# Unix Cheatsheet
+
+## Basics
+
+`echo <text>` — print text to the stdout at a new line  
+`echo -e <text>` — enable interpretation of backslashes (e.g. "echo -e 'foo\nbar'")
+
+`!!` — last command (e.g. "sudo !!")  
+`'` or `"` — start a multiline input (single quote)
+
+`.. $<variable>` — inline variable (e.g. environment variables)  
+`.. "$<variable>"` — same, but less error-prone  
+`<variable>=<value>` — set a variable  
+`export <variable>` — set as environment variable
+
 
 ## Bash Shortcuts
 
@@ -25,32 +39,11 @@
 `Tab` — autocomplete
 
 
-## Bash Basics
-
-`!!` — last command (e.g. "sudo !!")  
-`'` or `"` — multiline input (single quote)  
-`echo <text>` — print text at a new line  
-`echo -e <text>` — enable interpretation of backslashes (e.g. "echo -e 'foo\nbar'")
-
-
-## Scripting
-
-`.. $<variable>` — inline variable (e.g. environment variables)  
-`.. "$<variable>"` — same, but less error-prone  
-`read <variable>` — read variable
-
-`$<number>` — positional parameter/argument (e.g. $0 is the name of thr script)  
-`$#` — number of positional parameters
-`$$` — PID of the current shell  
-
-*to be continued...*
-
-
 ## Streams
 
 `` `<command>` `` — execute a command and paste it inline (e.g. "echo \`pwd\`/test")  
 `>` — redirect a stream to a file or another stream (1\> for stdin, 2\> for stderr)  
-`>>` — redirect a stream to the end of a file (e.g. "sort << END" helps to pipe stdin to sort)  
+`>>` — redirect a stream to the end of a file (e.g. "sort \<\< END" helps to pipe stdin to sort)  
 `|` — pipe the result of a command to the next command
 
 `xargs <command> <arguments>` — execute a command with given arguments  
@@ -96,6 +89,7 @@
 `tail -n <number> <file>` — just tail of a single file
 
 `less <file>` — cat on steroids (commands: \<number\>G, g, q, arrows, page up/down)
+`.. | less` — less supports flow redirection
 
 `sort <file>` — sort lines of file alphabetically  
 `sort -o <file> <file>` — put the results to a file  
@@ -204,4 +198,30 @@
 
 ## Network
 
-*to be continued...*
+`hostname` — display hostname of the machine  
+`hostname -i` — display IP of the machine  
+`ping <ip/domain>` — ping a remote server  
+`ping -f <ip/domain>` — flood a remote server  
+`traceroute <host>` — complete route to a particular destination
+
+`ifconfig` — get network configuration  
+`ifconfig -a` — same, but with disabled interfaces  
+`ifconfig <interface> down` — disable an interface  
+`ifconfig <interface> up` — enable an interface  
+`ifconfig <interface> <IP>` — change the IP of an interface  
+`ifconfig <interface> netstat <mask>` — change the subnet mask of an interface  
+`ifconfig <interface> broadcast <IP>` — change the broadcast adress of an interface
+
+`netstat` — display connections, routing tables, etc.  
+`netstat -at` — display all TCP ports  
+`netstat -au` — display all UDP ports  
+`netstat -l` — list only listening ports  
+`netstat -s` — show statistics for all ports  
+`netstat -p` — display PID and program names  
+`netstat -g` — display all multicast network subscribed by this host
+
+`nslookup <host>` — DNS lookup  
+`nslookup <IP>` — reverse DNS lookup
+
+> Network is a big topic. Maybe I should move it to a separate cheatsheet.  
+> I'll cover nmap, natcat, telnet, wget and curl later, when I finish a course about networks and make sure I completely understand everything. *To be continued...*
