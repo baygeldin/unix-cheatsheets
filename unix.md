@@ -16,27 +16,27 @@
 
 ## Bash Shortcuts
 
-`Ctrl + C` — cancel current terminal process  
-`Ctrl + L` — clear the terminal  
-`Shift + Page Up/Down` — pages of terminal (after a clearing)
+<kbd>Ctrl + C</kbd> — cancel current terminal process  
+<kbd>Ctrl + L</kbd> — clear the terminal  
+<kbd>Shift + Page Up/Down</kbd> — pages of terminal (after a clearing)
 
-`Ctrl + A` — start of a line  
-`Ctrl + E` — end of a line
+<kbd>Ctrl + A</kbd> — start of a line  
+<kbd>Ctrl + E</kbd> — end of a line
 
-`Esc + b` — one word backwards  
-`Esc + f` — one word forward
+<kbd>Esc + b</kbd> — one word backwards  
+<kbd>Esc + f</kbd> — one word forward
 
-`Esc + c` — capitalize word  
-`Esc + u` — upper-case word  
-`Esc + l` — lower-case word
+<kbd>Esc + c</kbd> — capitalize word  
+<kbd>Esc + u</kbd> — upper-case word  
+<kbd>Esc + l</kbd> — lower-case word
 
-`Ctrl + U` — delete to the left  
-`Ctrl + K` — delete to the right  
-`Ctrl + W` — delete a word on the left  
-`Ctrl + Y` — revert deleting
+<kbd>Ctrl + U</kbd> — delete to the left  
+<kbd>Ctrl + K</kbd> — delete to the right  
+<kbd>Ctrl + W</kbd> — delete a word on the left  
+<kbd>Ctrl + Y</kbd> — revert deleting
 
-`Ctrl + R` — search the history  
-`Tab` — autocomplete
+<kbd>Ctrl + R</kbd> — search the history  
+<kbd>Tab</kbd> — autocomplete
 
 
 ## Streams
